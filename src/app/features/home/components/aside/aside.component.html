@@ -1,0 +1,224 @@
+<div class="lateral">
+  <div class="lateral-menu">
+    <hr class="my-0 mx-3 h-0.5 border-t-0 bg-white/30" />
+    <li>
+      <a href="/"><mat-icon>smartphone</mat-icon> Smartphones e Tablets</a>
+    </li>
+    <hr class="my-0 mx-3 h-0.5 border-t-0 bg-white/30" />
+    <li>
+      <a href="/"><mat-icon>computer</mat-icon> Computadores e Notebooks</a>
+    </li>
+    <hr class="my-0 mx-3 h-0.5 border-t-0 bg-white/30" />
+    <li>
+      <a href="/"><mat-icon>tv</mat-icon> Televisores e Monitores</a>
+    </li>
+    <hr class="my-0 mx-3 h-0.5 border-t-0 bg-white/30" />
+    <li>
+      <a href="/"><mat-icon>keyboard</mat-icon> Periféricos e Acessórios</a>
+    </li>
+    <hr class="my-0 mx-3 h-0.5 border-t-0 bg-white/30" />
+    <li>
+      <a href="/"><mat-icon>headphones</mat-icon> Áudio e Fones de Ouvido</a>
+    </li>
+    <hr class="my-0 mx-3 h-0.5 border-t-0 bg-white/30" />
+    <li>
+      <a href="/"><mat-icon>camera_alt</mat-icon> Câmeras e Filmadoras</a>
+    </li>
+    <hr class="my-0 mx-3 h-0.5 border-t-0 bg-white/30" />
+    <li>
+      <a href="/"><mat-icon>memory</mat-icon> Hardware e Componentes</a>
+    </li>
+    <hr class="my-0 mx-3 h-0.5 border-t-0 bg-white/30" />
+    <li>
+      <a href="/"><mat-icon>videogame_asset</mat-icon> Games e Consoles</a>
+    </li>
+    <hr class="my-0 mx-3 h-0.5 border-t-0 bg-white/30" />
+    <li>
+      <a href="/"><mat-icon>home</mat-icon> Smart Home e Automação</a>
+    </li>
+    <hr class="my-0 mx-3 h-0.5 border-t-0 bg-white/30" />
+  </div>
+  <div class="for-you">
+    <header class="for-you-header"><h1>PARA VOCÊ</h1></header>
+    <div class="for-you-main">
+      <div class="for-you-main-apresentation">
+        <div class="for-you-img-apresentation">
+          <span class="its-new">New!</span>
+          <img src="perfume-ad.png" alt="" />
+        </div>
+        <div>
+          <button class="for-you-like-button">
+            <mat-icon fontIcon="favorite"></mat-icon>
+          </button>
+          <button class="for-you-right-button">
+            <mat-icon fontIcon="turn_right"></mat-icon>
+          </button>
+          <button class="for-you-tune-button">
+            <mat-icon fontIcon="tune"></mat-icon>
+          </button>
+        </div>
+      </div>
+      <div class="for-you-main-info">
+        <h1>Chanel Tine</h1>
+        <div class="stars">
+          <mat-icon class="material-icons-outlined">star</mat-icon>
+          <mat-icon class="material-icons-outlined">star</mat-icon>
+          <mat-icon class="material-icons-outlined">star</mat-icon>
+          <mat-icon class="material-icons-outlined">star</mat-icon>
+          <mat-icon class="material-icons-outlined">star_half</mat-icon>
+        </div>
+        <div class="price">
+          <h1 class="current-price">R$ 39,90</h1>
+          <h6 class="last-price">R$ 39,90</h6>
+        </div>
+        <div class="time">
+          <div>
+            <div>03</div>
+            <h3>Dias</h3>
+          </div>
+          <div class="time-double-dot">:</div>
+          <div>
+            <div>20</div>
+            <h3>Horas</h3>
+          </div>
+          <div class="time-double-dot">:</div>
+          <div>
+            <div>35</div>
+            <h3>Minutos</h3>
+          </div>
+          <div class="time-double-dot">:</div>
+          <div>
+            <div>20</div>
+            <h3>Segundos</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="services">
+    <header class="services-header"><h1>NOSSOS SERVIÇOS</h1></header>
+    <ul>
+      <li class="service-item">
+        <a href="">
+          <mat-icon class="mat-18">airport_shuttle</mat-icon>
+          <div>
+            <h5>Entrega grátis</h5>
+            <p>Receba seus produtos em casa sem custo adicional.</p>
+          </div>
+        </a>
+      </li>
+      <li class="service-item">
+        <a href="">
+          <mat-icon class="mat-18">support_agent</mat-icon>
+          <div>
+            <h5>Suporte 24/7</h5>
+            <p>Estamos disponíveis a qualquer hora para ajudar você.</p>
+          </div>
+        </a>
+      </li>
+      <li class="service-item">
+        <a href="">
+          <mat-icon class="mat-18">verified</mat-icon>
+          <div>
+            <h5>Qualidade Garantida</h5>
+            <p>Nossos produtos passam por rigorosos testes de qualidade.</p>
+          </div>
+        </a>
+      </li>
+      <li class="service-item">
+        <a href="">
+          <mat-icon class="mat-18">eco</mat-icon>
+          <div>
+            <h5>Produtos Sustentáveis</h5>
+            <p>Oferecemos produtos que respeitam o meio ambiente.</p>
+          </div>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="comments">
+    <header class="comments-header"><h1>COMENTÁRIOS</h1></header>
+    <div style="overflow: hidden">
+      <div
+        [ngStyle]="{
+          transform: 'translateX(' + -currentSlide * 100 + '%)',
+        }"
+        (transitionend)="onTransitionEnd()"
+      >
+        <div class="comment-item">
+          <mat-icon
+            style="width: 100%; height: 100%; font-size: 88px"
+            class="mat-18"
+          >
+            chat
+          </mat-icon>
+          <div>
+            <p class="comment">
+              "Gostei bastante, muito bom! O produto atendeu todas as minhas
+              expectativas e chegou antes do prazo. Recomendo para todos que
+              buscam qualidade e rapidez na entrega."
+            </p>
+            <div class="commenter-info">
+              <img src="comments/person1.jpg" alt="Avatar de Julia" />
+              <div>
+                <h6>Marcos</h6>
+                <p>Cliente de São Paulo</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="comment-item">
+          <mat-icon
+            style="width: 100%; height: 100%; font-size: 88px"
+            class="mat-18"
+          >
+            chat
+          </mat-icon>
+          <div>
+            <p class="comment">
+              "Excelente atendimento e qualidade. A equipe foi muito atenciosa e
+              o produto é exatamente como descrito. Fiquei muito satisfeito com
+              a compra e certamente voltarei a comprar novamente."
+            </p>
+            <div class="commenter-info">
+              <img src="comments/person2.jpg" alt="Avatar de Marcos" />
+              <div>
+                <h6>Julia</h6>
+                <p>Cliente de Rio de Janeiro</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="comment-item">
+          <mat-icon
+            style="width: 100%; height: 100%; font-size: 88px"
+            class="mat-18"
+          >
+            chat
+          </mat-icon>
+          <div>
+            <p class="comment">
+              "Produto chegou rápido e em perfeito estado. A embalagem estava
+              muito bem feita, garantindo que o produto não sofresse nenhum dano
+              durante o transporte. Adorei a experiência de compra."
+            </p>
+            <div class="commenter-info">
+              <img src="comments/person3.jpg" alt="Avatar de Ana" />
+              <div>
+                <h6>Ana</h6>
+                <p>Cliente de Belo Horizonte</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="ad-lateral">
+    <div>
+      <h3>Os melhores perfumes que você já comprou.</h3>
+      <h4>30% OFF</h4>
+      <button>VER PROMOÇÕES</button>
+    </div>
+  </div>
+</div>

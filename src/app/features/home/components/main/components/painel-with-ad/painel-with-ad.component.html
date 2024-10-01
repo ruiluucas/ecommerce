@@ -1,0 +1,33 @@
+<div id="painel-with-ad">
+  <div class="painel">
+    <div class="carousel">
+      <div
+        class="carousel-inner"
+        [ngStyle]="{
+          transform: 'translateX(' + -currentSlide * 33.33 + '%)'
+        }"
+        (transitionend)="onTransitionEnd()"
+      >
+        <div class="carousel-slide">
+          <img src="painel-with-ad/painel1.jpg" />
+        </div>
+        <div class="carousel-slide">
+          <img src="/painel-with-ad/painel2.jpg" />
+        </div>
+        <div class="carousel-slide">
+          <img src="/painel-with-ad/painel3.jpg" />
+        </div>
+      </div>
+
+      <button class="carousel-control prev" (click)="prevSlide()">
+        &#10094;
+      </button>
+      <button class="carousel-control next" (click)="nextSlide()">
+        &#10095;
+      </button>
+    </div>
+  </div>
+  <div class="ad">
+    <img src="painel-with-ad/ad.jpg" alt="" />
+  </div>
+</div>

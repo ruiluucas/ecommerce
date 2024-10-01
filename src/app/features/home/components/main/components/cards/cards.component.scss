@@ -1,0 +1,56 @@
+#cards {
+  display: flex;
+  flex-direction: column;
+
+  .card-ad {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: black;
+    border: 0;
+
+    img {
+      opacity: 0.6;
+      height: 200px;
+      object-fit: cover;
+      object-position: left;
+    }
+
+    .card-ad-main {
+      position: absolute;
+      border: 0;
+      color: white;
+      text-align: center;
+
+      h1 {
+        font-size: medium;
+        font-weight: 600;
+      }
+
+      p {
+        font-size: small;
+        font-weight: 400;
+        margin-top: 0.4rem;
+      }
+
+      button {
+        margin-top: 0.6rem;
+        background-color: black;
+        color: white;
+        border: 0;
+        font-weight: 800;
+        padding: 1rem 2rem;
+        font-size: small;
+      }
+    }
+  }
+
+  div {
+    border: 4px solid black;
+
+    img {
+      width: 100%;
+      height: 200px;
+    }
+  }
+}

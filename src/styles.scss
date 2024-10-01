@@ -1,1 +1,254 @@
-/* You can add global styles to this file, and also import other style files */
+@import "mdb-angular-ui-kit/assets/scss/mdb.scss";
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: initial;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+* {
+  line-height: initial;
+  box-sizing: content-box;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  padding: 1rem 0.5rem;
+  background-color: white;
+  border-radius: 1rem;
+
+  .section-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-left: 6px solid black;
+    padding: 0.5rem 0;
+    align-items: center;
+
+    h1 {
+      margin-left: 0.4rem;
+      display: flex;
+      align-items: center;
+      font-size: small;
+      font-weight: 600;
+      gap: 0.2rem;
+      line-height: initial;
+      margin: 0;
+      margin-left: 0.6rem;
+    }
+  }
+
+  .section-main {
+    width: 100%;
+    margin-top: 0.6rem;
+    display: flex;
+    overflow: scroll;
+    scrollbar-width: none;
+
+    .item-pattern {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .show-item {
+        background-color: rgba(0, 0, 0, 0.092);
+        padding: 0.5rem;
+        width: 60px;
+        height: 60px;
+
+        img {
+          width: 60px;
+          height: 60px;
+        }
+      }
+
+      .item-name {
+        font-weight: 500;
+        text-align: center;
+        margin: 0.5rem;
+        font-size: x-small;
+        line-height: initial;
+      }
+      .stars {
+        display: flex;
+        flex-wrap: nowrap;
+        width: min-content;
+        margin: 0 auto;
+
+        mat-icon {
+          font-size: medium !important;
+          width: min-content;
+        }
+      }
+
+      .item-price {
+        font-size: small;
+        text-align: center;
+        font-weight: 600;
+        line-height: initial;
+      }
+    }
+  }
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.mat-typography h1,
+.mat-typography h2,
+.mat-typography h3,
+.mat-typography h4,
+.mat-typography h5,
+.mat-typography h6,
+.mat-typography p,
+.mat-typography div {
+  font: Roboto, sans-serif;
+  line-height: initial;
+  letter-spacing: -0.016rem;
+}
+
+.mat-typography h1,
+.mat-typography h2,
+.mat-typography h3,
+.mat-typography h4,
+.mat-typography h5,
+.mat-typography h6,
+.mat-typography p {
+  margin: 0;
+}

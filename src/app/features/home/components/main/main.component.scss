@@ -1,0 +1,21 @@
+.main {
+  flex: 1;
+}
+
+@media only screen and (min-width: 600px) {
+  :host {
+    width: calc(100vw - 250px);
+
+    div {
+      width: 100%;
+      painel-with-ad {
+        max-width: min-content;
+        width: 100%;
+      }
+
+      div {
+        max-width: min-content;
+      }
+    }
+  }
+}

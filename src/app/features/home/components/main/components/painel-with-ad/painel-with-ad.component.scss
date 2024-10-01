@@ -1,0 +1,92 @@
+#painel-with-ad {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  .painel {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    .carousel {
+      position: relative;
+      height: 200px;
+      overflow: hidden;
+
+      .carousel-inner {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+        height: 100%;
+        width: max-content;
+
+        .carousel-slide {
+          img {
+            height: 100%;
+            width: 100vw;
+            object-fit: cover;
+          }
+        }
+      }
+
+      .carousel-control {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+      }
+
+      .prev {
+        left: 10px;
+      }
+
+      .next {
+        right: 10px;
+      }
+    }
+  }
+
+  .ad {
+    padding: 1rem;
+
+    img {
+      height: 200px;
+      min-width: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  :host {
+    max-width: 100%;
+
+    #painel-with-ad {
+      flex-direction: row;
+      padding-bottom: 16px;
+
+      .painel {
+        width: 70%;
+        height: 440px;
+
+        .carousel {
+          height: 440px;
+        }
+      }
+
+      .ad {
+        padding: 0;
+        height: 440px;
+        width: 30%;
+
+        img {
+          height: 440px;
+          width: 30%;
+        }
+      }
+    }
+  }
+}
