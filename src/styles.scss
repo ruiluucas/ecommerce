@@ -139,6 +139,39 @@ body {
   box-sizing: content-box;
 }
 
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  background-color: black;
+}
+
+.mat-typography h1,
+.mat-typography h2,
+.mat-typography h3,
+.mat-typography h4,
+.mat-typography h5,
+.mat-typography h6,
+.mat-typography p,
+.mat-typography div {
+  font: Roboto, sans-serif;
+  line-height: initial;
+  letter-spacing: -0.016rem;
+}
+
+.mat-typography h1,
+.mat-typography h2,
+.mat-typography h3,
+.mat-typography h4,
+.mat-typography h5,
+.mat-typography h6,
+.mat-typography p {
+  margin: 0;
+}
+
 .section {
   display: flex;
   flex-direction: column;
@@ -221,34 +254,52 @@ body {
   }
 }
 
-html,
-body {
-  height: 100%;
-}
-body {
-  margin: 0;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
+@media only screen and (min-width: 1000px) {
+  .section {
+    margin-right: 3rem;
+  }
+
+  .section-main {
+    gap: 1rem;
+    cursor: pointer;
+  }
+
+  .item-name {
+    font-size: small !important;
+  }
+
+  .item-pattern {
+    background-color: rgba(0, 0, 0, 0.068);
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    transition: all 0.2s;
+  }
+
+  .item-pattern:hover {
+    background-color: rgba(0, 0, 0, 0.022);
+  }
+
+  .item-price {
+    font-size: large !important;
+  }
+
+  .show-item {
+    border-radius: 1rem;
+  }
+
+  .stars {
+  }
 }
 
-.mat-typography h1,
-.mat-typography h2,
-.mat-typography h3,
-.mat-typography h4,
-.mat-typography h5,
-.mat-typography h6,
-.mat-typography p,
-.mat-typography div {
-  font: Roboto, sans-serif;
-  line-height: initial;
-  letter-spacing: -0.016rem;
-}
+@media only screen and (min-width: 700px) {
+  .fields {
+    img {
+      width: 80px !important;
+      height: 80px !important;
+    }
 
-.mat-typography h1,
-.mat-typography h2,
-.mat-typography h3,
-.mat-typography h4,
-.mat-typography h5,
-.mat-typography h6,
-.mat-typography p {
-  margin: 0;
+    h3 {
+      font-size: small !important;
+    }
+  }
 }
